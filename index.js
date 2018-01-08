@@ -2,7 +2,7 @@
 // 1 = X, 2 = O
 // 2 players go turn by turn, informed whos turn it is 
 
-let Board = () => {
+let Board = function () {
   this.board = [
     [0, 0, 0],
     [0, 0, 0],
@@ -11,6 +11,10 @@ let Board = () => {
 }
 
 Board.prototype = {
+  play: () => {
+    // initate game   
+  },
+
   move: () => {
     // allow player to make move
   },
